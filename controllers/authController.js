@@ -293,10 +293,12 @@ exports.updateUser = catchAsyncErrors(async(req,res,next)=>{
 
  exports.deleteUser = catchAsyncErrors(async (req,res,next)=>{
 
-    console.log(req.params.id);
-    console.log("challa")
+
    
     const user = await User.findById(req.params.id);
+
+    console.log(user);
+    console.log("chala");
 
     if(!user){
         return next(new ErrorHandler('user not found ',404));
