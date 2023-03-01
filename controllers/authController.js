@@ -292,6 +292,9 @@ exports.updateUser = catchAsyncErrors(async(req,res,next)=>{
  // delete user admin route /api/v1/admin/user/:id
 
  exports.deleteUser = catchAsyncErrors(async (req,res,next)=>{
+
+    console.log(req.params.id);
+    console.log("challa")
    
     const user = await User.findById(req.params.id);
 
