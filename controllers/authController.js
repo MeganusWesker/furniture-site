@@ -297,18 +297,25 @@ exports.updateUser = catchAsyncErrors(async(req,res,next)=>{
    
     const user = await User.findById(req.params.id);
 
-    console.log(user);
-    console.log("chala");
+
 
     if(!user){
-        return next(new ErrorHandler('user not found ',404));
+        return next(new ErrorHandler('user not found',404));
     }
+
+    console.log("chalaja")
 
     const imageId = user.avatar.public_id;
 
+    console.log("kya be 1")
+
     await cloudinary.v2.uploader.destroy(imageId);
 
+    console.log("kya be")
+
     await user.remove();
+
+    console.log("chal toh geya hai bhenchod")
 
     res.status(200).json({
        success:true,
