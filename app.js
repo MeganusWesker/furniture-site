@@ -2,7 +2,7 @@ const express= require('express');
 const app = express();
 const fileUpload = require('express-fileupload');
 const cookieParser = require('cookie-parser');
-const cors =requrie('cors');
+const cors =require('cors');
 const errorMidddleware = require("./middlewares/error");
 
 
