@@ -303,15 +303,20 @@ exports.updateUser = catchAsyncErrors(async(req,res,next)=>{
         return next(new ErrorHandler('user not found',404));
     }
 
-    console.log("chalaja")
+  
 
     const imageId = user.avatar.public_id;
 
-    console.log("kya be 1")
+    console.log(imageId);
 
-    await cloudinary.v2.uploader.destroy(imageId);
+    
 
-    console.log("kya be")
+   const data= await cloudinary.v2.uploader.destroy(imageId);
+
+
+
+   console.log(data)
+    
 
     await user.remove();
 
