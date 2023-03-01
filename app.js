@@ -2,7 +2,7 @@ const express= require('express');
 const app = express();
 const fileUpload = require('express-fileupload');
 const cookieParser = require('cookie-parser');
-
+const cors =requrie('cors');
 const errorMidddleware = require("./middlewares/error");
 
 
@@ -15,6 +15,18 @@ app.use(express.json({limit:"50mb"}));
 app.use(cookieParser());
 app.use(fileUpload());
 app.use(express.urlencoded({limit:"50mb",extended:true}))
+
+
+app.use(
+    cors({
+      credentials: true,
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      origin: [process.env.FRONTEND_URI_1, process.env.FRONTEND_URI_2],
+    })
+);
+
+
+
 //app.use(bodyParser.urlencoded({extended:true}))
 
 // Importing all routes 
