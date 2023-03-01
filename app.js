@@ -19,7 +19,7 @@ app.use(express.urlencoded({limit:"50mb",extended:true}))
 
 app.use(
     cors({
-      origin:"*",
+      origin:process.env.FRONTEND_URL,// origin:"*" dosen't works with credentials:true,
       credentials: true,
       methods: ["GET", "POST", "PUT", "DELETE"],
     })
