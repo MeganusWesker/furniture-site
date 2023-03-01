@@ -1,0 +1,63 @@
+[
+    {
+        "name":"gourav di maa da pola",
+        "price":87545,
+        "description":"this is king",
+        "images":[{
+                "public_id":"sample image",
+                "url":"sampleurl"
+               }],
+        "category":"Electronics",
+        "seller":"Ebay",
+        "stock":50,
+        "numOfReviews":22,
+        "reviews":[]
+        
+    },
+    {
+        "name":"gourav di maa da pola",
+        "price":87545,
+        "description":"sexy rndi",
+        "images":[{
+                "public_id":"sample image",
+                "url":"sampleurl"
+               }],
+        "category":"Electronics",
+        "seller":"Ebay",
+        "stock":50,
+        "numOfReviews":22,
+        "reviews":[]
+        
+    },
+    {
+        "name":"gourav di maa da pola",
+        "price":87545,
+        "description":"sexy rndi",
+        "images":[{
+                "public_id":"sample image",
+                "url":"sampleurl"
+               }],
+        "category":"Electronics",
+        "seller":"Ebay",
+        "stock":50,
+        "numOfReviews":22,
+        "reviews":[]
+        
+    },
+    {
+        "name":"gourav di maa da chola",
+        "price":87545,
+        "description":"sexy rndi gourav di maaa",
+        "images":[{
+                "public_id":"sample image",
+                "url":"sampleurl"
+               }],
+        "category":"Electronics",
+        "seller":"Ebay",
+        "stock":50,
+        "numOfReviews":22,
+        "reviews":[]
+        
+    }
+
+]
